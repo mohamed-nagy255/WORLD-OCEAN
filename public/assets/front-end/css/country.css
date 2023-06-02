@@ -1,0 +1,92 @@
+section.country {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+}
+
+section.country .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5rem;
+}
+
+section.country .content .col-content {
+    position: relative;
+    width: 210px;
+    height: 315px;
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(.495, .05, .55, .95);
+    cursor: pointer;
+    -webkit-transition: all 0.3s cubic-bezier(.495, .05, .55, .95);
+    -moz-transition: all 0.3s cubic-bezier(.495, .05, .55, .95);
+    -ms-transition: all 0.3s cubic-bezier(.495, .05, .55, .95);
+    -o-transition: all 0.3s cubic-bezier(.495, .05, .55, .95);
+    box-shadow: 4px 4px 20px 3px var(--main-color);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+section.country .content .col-content img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+section.country .content .col-content::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #17539757;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    z-index: 1;
+}
+
+section.country .content .col-content h4 {
+    position: absolute;
+    color: white;
+    right: 20px;
+    z-index: 2;
+}
+section.country .content .col-content h4 {
+    font-size: 24px;
+    font-weight: 600;
+    bottom: 40px;
+}
+
+section.country .content .col-content:hover {
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 ;
+    direction: ltr;
+}
+
+.small.text-muted {
+    display: none;
+}

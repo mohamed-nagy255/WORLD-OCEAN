@@ -1,0 +1,322 @@
+/* ====== features ====== */
+section.features {
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+}
+
+section.features .content .col {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 3rem;
+    align-items: center;
+} 
+
+section.features .content .col .card {
+    padding: 3.1em 1.25em;
+    text-align: center;
+    background: linear-gradient(0deg, var(--main-color) 10px, transparent 10px);
+    background-repeat: no-repeat;
+    background-position: 0 0.62em;
+    box-shadow: 1px 1px 10px 3px var(--main-color);
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    text-decoration: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+section.features .content .col .card .icon {
+    font-size: 2.5em;
+    height: 2em;
+    width: 2em;
+    margin: auto;
+    background-color: var(--main-color);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+section.features .content .col .card .icon::before {
+    position: absolute;
+    content: '';
+    height: 1.5em;
+    width: 1.5em;
+    border: 0.12em solid var(--main-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+section.features .content .col .card h3 {
+    font-size: 1.3em;
+    margin: 1em 0 1.4em 0;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+section.features .content .col .card p {
+    line-height: 2em;
+    color: #bbbbbb;
+}
+
+section.features .content .col .card:hover {
+    background-position: 0;
+}
+
+section.features .content .col .card:hover .icon::before{
+    height: 2.25em;
+    width: 2.25em;
+}
+
+.target {
+    width: 100%;
+    padding: 30px 0;
+    background-image: url(../images/back.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.target::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.target .text-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.target .text-content h2 {
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+    padding: 30px;
+}
+
+.target .text-content .box .col {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.target .text-content h3 {
+    color: white;
+    font-size: 1.7em;
+    font-weight: 600;
+    padding: 30px 0;
+    text-align: right;
+}
+
+.target .text-content p {
+    font-size: 1.3em;
+    font-weight: 200;
+    color: white;
+    text-align: right;
+}
+
+.target .text-content p i {
+   padding: 0 0 0 20px;
+   font-size: 1.6em;
+   color: var(--main-color);
+}
+
+.title {
+    padding-top: 30px;
+    margin-top: 0;
+}
+
+section.offer {
+    padding-bottom: 50px;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+}
+
+section.offer .content {
+    padding: 50px;
+}
+
+section.offer .content p {
+    padding: 20px 0;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.6;
+    border-bottom: 1px solid var(--main-color);
+}
+
+section.offer .content p i {
+    padding: 0 0 0 20px;
+    color: var(--main-color);
+    font-size: 1.7em;
+}
+
+section.offer-section {
+    padding-bottom: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+}
+
+section.offer-section .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+section.offer-section .content .box {
+    border-radius: 20px;
+    height: 100%;
+    background-color: #1753975e;
+    backdrop-filter: blur(10px);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all 0.3s cubic-bezier(.445, .05, .55, .95);
+    cursor: pointer;
+    -webkit-transition: all 0.3s cubic-bezier(.445, .05, .55, .95);
+    -moz-transition: all 0.3s cubic-bezier(.445, .05, .55, .95);
+    -ms-transition: all 0.3s cubic-bezier(.445, .05, .55, .95);
+    -o-transition: all 0.3s cubic-bezier(.445, .05, .55, .95);
+    box-shadow: 4px 4px 20px 3px var(--main-color);
+}
+
+section.offer-section .content .box .thum {
+    position: relative;
+    height: 80%;
+}
+
+section.offer-section .content .box .thum img {
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+
+section.offer-section .content .box .thum::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #17539757;
+    backdrop-filter: blur(1px);
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+    z-index: 1;
+}
+
+section.offer-section .content .box .thum h3 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 21;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+section.offer-section .content .box .thum .more {
+    position: absolute;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 777;
+    background-color: var(--main-color);
+    padding: 3px 7px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+section.offer-section .content .box .thum .more:hover {
+    background-color: #1753978a;
+}
+
+section.offer-section .content .box .des-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px ;
+    
+}
+
+section.offer-section .content .box .des-content .location h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+section.offer-section .content .box .des-content .location p {
+    font-size: 15px;
+}
+
+section.offer-section .content .box:hover {
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+}
